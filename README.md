@@ -14,4 +14,5 @@
 | 22th-Feb | VCS: git Fundamentals  | [Link](https://miro.com/app/board/uXjVG81x7g8=/?share_link_id=193447825175) |
 | 28th-Feb | VCS: git Advance  | [Link](https://miro.com/app/board/uXjVG5NaFH4=/?share_link_id=38134932990) |
 | 1st-March | AWS: Ec2 Fundamentals  | [Link](https://miro.com/app/board/uXjVG4iqO6U=/?share_link_id=392753860979) |
+| 7th-March | AWS: EC2 Automation with Bash Script  | [Link](https://miro.com/app/board/uXjVG19cmLQ=/?share_link_id=320207876821) |
 
