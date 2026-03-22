@@ -17,6 +17,7 @@
 | 7th-March | AWS: EC2 Automation with Bash Script  | [Link](https://miro.com/app/board/uXjVG19cmLQ=/?share_link_id=320207876821) |
 | 8th-March | Advance Bash Script  | [Link](https://miro.com/app/board/uXjVG1TVMZE=/?share_link_id=676985975659) |
 | 14th-March | Python Introduction  | [Link](https://miro.com/app/board/uXjVGxt6Y_U=/?share_link_id=692102770810) |
+| 15th-March | Python Intro - 2  | [Link](https://miro.com/app/board/uXjVGxCuEIk=/?share_link_id=538149000978) |
 
 
 
