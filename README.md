@@ -20,5 +20,6 @@
 | 15th-March | Python Intro - 2  | [Link](https://miro.com/app/board/uXjVGxCuEIk=/?share_link_id=538149000978) |
 | 22nd-March | Python Class | [Link](https://miro.com/app/board/uXjVGtnEh48=/?share_link_id=465981261236) |
 | 28th-March | Python Automation | [Link](https://miro.com/app/board/uXjVGq1b1qc=/?share_link_id=167329900210) |
+| 29th-March | End-to-End DevOps Automation with Python | [Link](https://miro.com/app/board/uXjVGqLxxh4=/?share_link_id=794897233639) |
 
 
