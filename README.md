@@ -22,4 +22,4 @@
 | 28th-March | Python Automation | [Link](https://miro.com/app/board/uXjVGq1b1qc=/?share_link_id=167329900210) |
 | 29th-March | End-to-End DevOps Automation with Python | [Link](https://miro.com/app/board/uXjVGqLxxh4=/?share_link_id=794897233639) |
 | 4th-April | introduction to CI | [Link](https://miro.com/app/board/uXjVGnK5Rc8=/?share_link_id=638068431662) |
-
+| 5th-April | introduction to CI - 2 | [Link](https://miro.com/app/board/uXjVGnb6FMM=/?share_link_id=824650711067) |
