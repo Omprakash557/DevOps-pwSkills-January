@@ -23,3 +23,4 @@
 | 29th-March | End-to-End DevOps Automation with Python | [Link](https://miro.com/app/board/uXjVGqLxxh4=/?share_link_id=794897233639) |
 | 4th-April | introduction to CI | [Link](https://miro.com/app/board/uXjVGnK5Rc8=/?share_link_id=638068431662) |
 | 5th-April | introduction to CI - 2 | [Link](https://miro.com/app/board/uXjVGnb6FMM=/?share_link_id=824650711067) |
+| 11th-April | introduction Jenkins | [Link](https://miro.com/app/board/uXjVGkZ5rKA=/?share_link_id=883890472401) |
