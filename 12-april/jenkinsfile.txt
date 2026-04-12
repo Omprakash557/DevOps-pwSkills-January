@@ -88,13 +88,6 @@ pipeline {
                 echo "=========================================="
                 echo "Creating build artifacts..."
                 echo "=========================================="
-                bat '''
-                    if not exist "dist" mkdir dist
-                    copy app.py dist\
-                    copy test_app.py dist\
-                    copy requirements.txt dist\
-                    echo Artifacts ready in dist directory
-                '''
             }
         }
     }
