@@ -190,12 +190,6 @@ pipeline {
             }
         }
         
-        stage('Code Quality Check') {
-            steps {
-                echo "Running code quality checks..."
-                sh 'flake8 app.py test_app.py || true'
-            }
-        }
         
         stage('Run Application') {
             steps {
