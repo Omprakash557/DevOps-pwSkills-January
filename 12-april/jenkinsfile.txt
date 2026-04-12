@@ -17,9 +17,13 @@ pipeline {
             steps {
                 echo "=========================================="
                 echo "Checking out code from GitHub..."
-                echo "Repository: ${GITHUB_REPO}"
+                echo "Repository: https://github.com/Taneshbad/Jenkins_project2.git"
                 echo "=========================================="
-                git branch: 'main', url: '${GITHUB_REPO}'
+                checkout([
+                    $class: 'GitSCM',
+                    branches: [[name: '*/main']],
+                    userRemoteConfigs: [[url: 'https://github.com/Taneshbad/Jenkins_project2.git']]
+                ])
                 bat 'git log --oneline -1'
             }
         }
@@ -105,13 +109,13 @@ pipeline {
         success {
             echo "=========================================="
             echo "BUILD SUCCESSFUL!"
-            echo "Repository: ${GITHUB_REPO}"
+            echo "Repository: https://github.com/Taneshbad/Jenkins_project2.git"
             echo "=========================================="
         }
         failure {
             echo "=========================================="
             echo "BUILD FAILED - Check logs above"
-            echo "Repository: ${GITHUB_REPO}"
+            echo "Repository: https://github.com/Taneshbad/Jenkins_project2.git"
             echo "=========================================="
         }
     }
