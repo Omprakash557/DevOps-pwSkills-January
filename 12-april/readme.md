@@ -160,20 +160,9 @@ pipeline {
         PYTHON_VERSION = '3.9'
     }
     
-    options {
-        buildDiscarder(logRotator(numToKeepStr: '10'))
-        timeout(time: 30, unit: 'MINUTES')
-        timestamps()
-    }
+
     
     stages {
-        stage('Checkout Code') {
-            steps {
-                echo "Checking out code from GitHub..."
-                checkout scm
-                sh 'git log --oneline -1'
-            }
-        }
         
         stage('Setup Python') {
             steps {
