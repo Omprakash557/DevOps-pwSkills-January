@@ -25,5 +25,6 @@
 | 5th-April | introduction to CI - 2 | [Link](https://miro.com/app/board/uXjVGnb6FMM=/?share_link_id=824650711067) |
 | 11th-April | introduction Jenkins | [Link](https://miro.com/app/board/uXjVGkZ5rKA=/?share_link_id=883890472401) |
 | 12th-April | Jenkins - 2 | [Link](https://miro.com/app/board/uXjVGjuL1dU=/?share_link_id=181403161084) |
+| 18th-April | Testing Fundamentals | [Link](https://miro.com/app/board/uXjVGgH8B7w=/?share_link_id=926105083581) |
 
 
