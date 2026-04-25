@@ -25,7 +25,7 @@
 | 5th-April | introduction to CI - 2 | [Link](https://miro.com/app/board/uXjVGnb6FMM=/?share_link_id=824650711067) |
 | 11th-April | introduction Jenkins | [Link](https://miro.com/app/board/uXjVGkZ5rKA=/?share_link_id=883890472401) |
 | 12th-April | Jenkins - 2 | [Link](https://miro.com/app/board/uXjVGjuL1dU=/?share_link_id=181403161084) |
-| 18th-April | Testing Fundamentals | [Link](https://miro.com/app/board/uXjVGgH8B7w=/?share_link_id=926105083581) |
+| 18th-April | "- Importance of tests & testing types (unit, integration, regression), Unit testing frameworks (JUnit, pytest, RSpec, Jest), Choosing a testing framework, Writing unit tests (hands-on with one framework)" | [Link](https://miro.com/app/board/uXjVGgH8B7w=/?share_link_id=926105083581) |
 | 19th-April | "- Integration testing frameworks (Selenium, Cypress, etc.), Test-Driven Development (TDD) & Behavior-Driven Development (BDD), Code coverage & quality analysis tools" | [Link](https://miro.com/app/board/uXjVGgXuaB8=/?share_link_id=747206848781) |
 | 25th-April | "- Load testing tools (JMeter, Gatling, Locust), Stress testing & soak testing, Performance testing in CI/CD pipelines, Performance testing best practices" | [Link](https://miro.com/app/board/uXjVHcx9JP4=/?share_link_id=389553724932) |
 
