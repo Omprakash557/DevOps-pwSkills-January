@@ -21,9 +21,9 @@
 | 22nd-March | Python Class | [Link](https://miro.com/app/board/uXjVGtnEh48=/?share_link_id=465981261236) |
 | 28th-March | Python Automation | [Link](https://miro.com/app/board/uXjVGq1b1qc=/?share_link_id=167329900210) |
 | 29th-March | End-to-End DevOps Automation with Python | [Link](https://miro.com/app/board/uXjVGqLxxh4=/?share_link_id=794897233639) |
-| 4th-April | introduction to CI | [Link](https://miro.com/app/board/uXjVGnK5Rc8=/?share_link_id=638068431662) |
-| 5th-April | introduction to CI - 2 | [Link](https://miro.com/app/board/uXjVGnb6FMM=/?share_link_id=824650711067) |
-| 11th-April | introduction Jenkins | [Link](https://miro.com/app/board/uXjVGkZ5rKA=/?share_link_id=883890472401) |
+| 4th-April | "• Importance and benefits of CI, Intro to CI tools (Jenkins, Travis CI, CircleCI), advantages, Setting up a basic CI pipeline (build, test)" | [Link](https://miro.com/app/board/uXjVGnK5Rc8=/?share_link_id=638068431662) |
+| 5th-April | "• Building/testing code, artifact management, Notifications, reporting, writing tests for CI, Different environments (Beta, Gamma, Prod, Testsuite, OneBox), CI optimization and best practices" | [Link](https://miro.com/app/board/uXjVGnb6FMM=/?share_link_id=824650711067) |
+| 11th-April | "- Jenkins architecture, Jenkins installation, Integrating Jenkins with GitHub, Basic build triggers & scheduling" | [Link](https://miro.com/app/board/uXjVGkZ5rKA=/?share_link_id=883890472401) |
 | 12th-April | "- Files, plugins, and jobs (upstream/downstream), CI best practices & optimization, Managing and scaling Jenkins workloads" | [Link](https://miro.com/app/board/uXjVGjuL1dU=/?share_link_id=181403161084) |
 | 18th-April | "- Importance of tests & testing types (unit, integration, regression), Unit testing frameworks (JUnit, pytest, RSpec, Jest), Choosing a testing framework, Writing unit tests (hands-on with one framework)" | [Link](https://miro.com/app/board/uXjVGgH8B7w=/?share_link_id=926105083581) |
 | 19th-April | "- Integration testing frameworks (Selenium, Cypress, etc.), Test-Driven Development (TDD) & Behavior-Driven Development (BDD), Code coverage & quality analysis tools" | [Link](https://miro.com/app/board/uXjVGgXuaB8=/?share_link_id=747206848781) |
