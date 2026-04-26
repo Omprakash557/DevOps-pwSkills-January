@@ -1,0 +1,82 @@
+# requirements.txt
+# Python dependencies for User Management System with SonarQube
+
+# ============================================================================
+# CORE DEPENDENCIES
+# ============================================================================
+
+# Testing framework
+pytest==7.4.3
+pytest-cov==4.1.0
+
+# Code coverage
+coverage==7.3.2
+
+# ============================================================================
+# CODE QUALITY TOOLS (OPTIONAL BUT RECOMMENDED)
+# ============================================================================
+
+# Code style checker
+flake8==6.1.0
+
+# Code style formatter (optional)
+black==23.12.0
+
+# Code complexity checker
+pylint==3.0.3
+
+# Security checker
+bandit==1.7.5
+
+# Type checking
+mypy==1.7.1
+
+# ============================================================================
+# TESTING ENHANCEMENTS (OPTIONAL)
+# ============================================================================
+
+# Parallel test execution
+pytest-xdist==3.5.0
+
+# Retry failed tests
+pytest-rerunfailures==12.0
+
+# Test timing
+pytest-benchmark==4.0.0
+
+# HTML test reports
+pytest-html==4.1.1
+
+# ============================================================================
+# DOCUMENTATION
+# ============================================================================
+
+# Documentation generation
+sphinx==7.2.6
+
+# ============================================================================
+# DEVELOPMENT TOOLS (OPTIONAL)
+# ============================================================================
+
+# Environment management
+python-dotenv==1.0.0
+
+# Code formatting
+autopep8==2.0.4
+
+# ============================================================================
+# NOTES FOR SONARQUBE SETUP
+# ============================================================================
+
+# To install all dependencies:
+#   pip install -r requirements.txt
+#
+# To install only core dependencies:
+#   pip install pytest pytest-cov coverage
+#
+# For SonarQube analysis:
+#   1. Install SonarScanner (not in pip)
+#   2. Generate token in SonarQube UI
+#   3. Set SONAR_TOKEN environment variable
+#   4. Run: pytest --cov=user_manager --cov-report=xml
+#   5. Run: sonar-scanner -Dsonar.login=$SONAR_TOKEN
