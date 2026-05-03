@@ -30,7 +30,7 @@
 | 25th-April | "- Load testing tools (JMeter, Gatling, Locust), Stress testing & soak testing, Performance testing in CI/CD pipelines, Performance testing best practices" | [Link](https://miro.com/app/board/uXjVHcx9JP4=/?share_link_id=389553724932) |
 | 26th-April | ""- Static code analysis tools (SonarQube, Fortify) - Dynamic application security testing (DAST) - Penetration testing & ethical hacking - Security testing in CI/CD pipelines"" | [Link](https://miro.com/app/board/uXjVHcAJCmU=/?share_link_id=196376613708) |
 | 2nd-May | "• Importance of CD • Differences between Continuous Delivery & Continuous Deployment• CD tools overview (Jenkins, GitLab CI, Spinnaker)• Deployment pipelines" | [Link](https://miro.com/app/board/uXjVHZOlm1E=/?share_link_id=948189030788) |
-| 3rd-May | "• Blue/Green, Canary, Rolling deployments • Automated testing & monitoring • Deployment automation & orchestration • CD best practices & optimization • Release management & approvals" | [Link (https://miro.com/app/board/uXjVHZdx1DQ=/?share_link_id=916816987536) |
+| 3rd-May | "• Blue/Green, Canary, Rolling deployments • Automated testing & monitoring • Deployment automation & orchestration • CD best practices & optimization • Release management & approvals" | [Link](https://miro.com/app/board/uXjVHZdx1DQ=/?share_link_id=916816987536) |
 
 
 
