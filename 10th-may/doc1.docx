@@ -1,0 +1,157 @@
+Ansible Lab 1 - Localhost Setup and Basic Playbook
+Overview
+
+This lab demonstrates:
+
+Installing Ansible on Ubuntu
+Creating an Ansible project structure
+Configuring localhost inventory
+Testing Ansible connectivity
+Writing a simple playbook
+Understanding check mode (-C)
+Learning playbook syntax and indentation
+Step 1 - Install Ansible
+
+Update the system packages:
+
+sudo apt update
+sudo apt upgrade -y
+
+Install Ansible:
+
+sudo apt install ansible -y
+
+Verify installation:
+
+ansible --version
+Step 2 - Create Project Folder Structure
+
+Create folders for Ansible scripts and labs:
+
+mkdir ansible-scripts
+cd ansible-scripts/
+
+mkdir lab-1
+cd lab-1/
+
+Example terminal output:
+
+ubuntu@ip-172-31-41-98:~$ mkdir ansible-scripts
+ubuntu@ip-172-31-41-98:~$ cd ansible-scripts/
+ubuntu@ip-172-31-41-98:~/ansible-scripts$ mkdir lab-1
+ubuntu@ip-172-31-41-98:~/ansible-scripts$ cd lab-1/
+ubuntu@ip-172-31-41-98:~/ansible-scripts/lab-1$
+Step 3 - Configure Ansible Inventory
+
+Create inventory file:
+
+nano inventory.ini
+
+Add the following content:
+
+[local]
+localhost ansible_connection=local
+Step 4 - Test Connection to Localhost
+
+Run Ansible ping module:
+
+ansible -i inventory.ini local -m ping
+
+Expected output:
+
+localhost | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+Step 5 - Create Playbook
+
+Create playbook file:
+
+nano playbook.yml
+
+Add the following content:
+
+---
+- name: Test
+  hosts: local
+
+  tasks:
+    - shell: echo "Hello Ansible!"
+
+    - shell: ls -la /home/ubuntu/
+
+    - shell: echo "Test" > /tmp/test.txt
+
+    - shell: whoami
+Step 6 - Run Playbook
+Dry Run / Check Mode
+ansible-playbook -C playbook.yml -i inventory.ini
+Actual Execution
+ansible-playbook playbook.yml -i inventory.ini
+Notes
+1. Shell Module
+
+The shell module is used to execute Linux bash commands.
+
+Example:
+
+- shell: whoami
+2. Check Mode (-C)
+
+-C means:
+
+Check mode
+Dry run mode
+Simulates changes without applying them
+
+Example:
+
+ansible-playbook -C playbook.yml -i inventory.ini
+3. Stateful Commands in Check Mode
+
+Some commands that modify system state may be skipped in check mode.
+
+Example:
+
+rm inventory.ini
+
+This changes system state permanently, so Ansible may skip it during dry run.
+
+Problem Statement
+
+Create an Ansible playbook to perform a simple local system health and setup check.
+
+The playbook should:
+
+Print a start message
+Display current working directory
+Show current date and time
+Create a demo folder
+Create a sample file inside the folder
+Show the hostname of the machine
+End Goal
+
+By the end of this lab, learners should understand:
+
+Basic Ansible playbook writing
+YAML indentation and syntax
+Inventory configuration
+Task execution
+Check mode (-C)
+Localhost automation
+Estimated Time
+
+15 Minutes
+
+Useful Commands
+Verify Inventory
+ansible all --list-hosts -i inventory.ini
+Syntax Check
+ansible-playbook --syntax-check playbook.yml -i inventory.ini
+Verbose Execution
+ansible-playbook -v playbook.yml -i inventory.ini
+Folder Structure
+ansible-scripts/
+└── lab-1/
+    ├── inventory.ini
+    └── playbook.yml
