@@ -32,6 +32,7 @@
 | 2nd-May | "• Importance of CD • Differences between Continuous Delivery & Continuous Deployment• CD tools overview (Jenkins, GitLab CI, Spinnaker)• Deployment pipelines" | [Link](https://miro.com/app/board/uXjVHZOlm1E=/?share_link_id=948189030788) |
 | 3rd-May | "• Blue/Green, Canary, Rolling deployments • Automated testing & monitoring • Deployment automation & orchestration • CD best practices & optimization • Release management & approvals" | [Link](https://miro.com/app/board/uXjVHZdx1DQ=/?share_link_id=916816987536) |
 | 9th-May | "• Why config management is essential (manual vs. automated) • Key benefits (consistency, scalability, disaster recovery) • Popular tools overview (Chef, Puppet, Ansible) and why Ansible is often preferred" | [Link](https://miro.com/app/board/uXjVHVnvK14=/?share_link_id=877351479856) |
+| 10th-May | ""• Agentless architecture, simple YAML syntax, push-based model • Declarative vs. imperative models • Installation steps on various OS • Control node, managed nodes, inventory, modules, tasks, playbooks • Communication via SSH, Ansible command structure, ad-hoc commands"" | [Link](https://miro.com/app/board/uXjVHV3wlRw=/?share_link_id=786983565268) |
 
 
 
