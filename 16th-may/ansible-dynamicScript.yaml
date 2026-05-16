@@ -1,0 +1,197 @@
+---
+- name: Install and Configure Apache Web Server on Debian and Arch Linux
+  hosts: webservers
+  become: yes
+
+  vars:
+
+    debian_packages:
+      - apache2
+      - curl
+      - unzip
+
+    arch_packages:
+      - apache
+      - curl
+      - unzip
+
+    apache_service_debian: apache2
+    apache_service_arch: httpd
+
+    custom_port: 80
+    enable_firewall: true
+
+  tasks:
+
+    #################################################################
+    # OS INFORMATION
+    #################################################################
+
+    - name: Display Operating System
+      debug:
+        msg: "Detected OS Family: {{ ansible_os_family }}"
+
+    #################################################################
+    # DEBIAN / UBUNTU SECTION
+    #################################################################
+
+    - name: Update apt cache for Debian/Ubuntu
+      apt:
+        update_cache: yes
+      when: ansible_os_family == "Debian"
+
+    - name: Install Apache packages on Debian/Ubuntu
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ debian_packages }}"
+      when: ansible_os_family == "Debian"
+      notify:
+        - Restart Apache Debian
+
+    - name: Start and enable Apache2 service
+      service:
+        name: "{{ apache_service_debian }}"
+        state: started
+        enabled: yes
+      when: ansible_os_family == "Debian"
+
+    - name: Configure Apache port on Debian
+      lineinfile:
+        path: /etc/apache2/ports.conf
+        regexp: '^Listen'
+        line: "Listen {{ custom_port }}"
+      when:
+        - ansible_os_family == "Debian"
+        - custom_port != 80
+      notify:
+        - Restart Apache Debian
+
+    - name: Create custom index page for Debian
+      copy:
+        dest: /var/www/html/index.html
+        content: |
+          <html>
+          <body>
+            <h1>Apache Running on Debian/Ubuntu</h1>
+            <h2>Hostname: {{ ansible_hostname }}</h2>
+            <h3>IP: {{ ansible_default_ipv4.address }}</h3>
+          </body>
+          </html>
+      when: ansible_os_family == "Debian"
+      notify:
+        - Restart Apache Debian
+
+    #################################################################
+    # ARCH LINUX SECTION
+    #################################################################
+
+    - name: Update pacman cache for Arch Linux
+      pacman:
+        update_cache: yes
+      when: ansible_distribution == "Archlinux"
+
+    - name: Install Apache packages on Arch Linux
+      pacman:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ arch_packages }}"
+      when: ansible_distribution == "Archlinux"
+      notify:
+        - Restart Apache Arch
+
+    - name: Start and enable Apache service on Arch
+      service:
+        name: "{{ apache_service_arch }}"
+        state: started
+        enabled: yes
+      when: ansible_distribution == "Archlinux"
+
+    - name: Configure Apache port on Arch Linux
+      lineinfile:
+        path: /etc/httpd/conf/httpd.conf
+        regexp: '^Listen'
+        line: "Listen {{ custom_port }}"
+      when:
+        - ansible_distribution == "Archlinux"
+        - custom_port != 80
+      notify:
+        - Restart Apache Arch
+
+    - name: Create custom index page for Arch Linux
+      copy:
+        dest: /srv/http/index.html
+        content: |
+          <html>
+          <body>
+            <h1>Apache Running on Arch Linux</h1>
+            <h2>Hostname: {{ ansible_hostname }}</h2>
+            <h3>IP: {{ ansible_default_ipv4.address }}</h3>
+          </body>
+          </html>
+      when: ansible_distribution == "Archlinux"
+      notify:
+        - Restart Apache Arch
+
+    #################################################################
+    # FIREWALL CONFIGURATION
+    #################################################################
+
+    - name: Allow Apache through UFW (Debian/Ubuntu)
+      ufw:
+        rule: allow
+        port: "{{ custom_port }}"
+        proto: tcp
+      when:
+        - enable_firewall
+        - ansible_os_family == "Debian"
+      ignore_errors: yes
+
+    - name: Allow Apache through firewalld (Arch Linux)
+      shell: |
+        firewall-cmd --permanent --add-port={{ custom_port }}/tcp
+        firewall-cmd --reload
+      when:
+        - enable_firewall
+        - ansible_distribution == "Archlinux"
+      ignore_errors: yes
+
+    #################################################################
+    # VERIFY SERVICES
+    #################################################################
+
+    - name: Verify Apache service on Debian
+      shell: systemctl is-active apache2
+      register: apache_status_debian
+      when: ansible_os_family == "Debian"
+
+    - name: Print Apache status Debian
+      debug:
+        msg: "Apache2 service status is {{ apache_status_debian.stdout }}"
+      when: ansible_os_family == "Debian"
+
+    - name: Verify Apache service on Arch Linux
+      shell: systemctl is-active httpd
+      register: apache_status_arch
+      when: ansible_distribution == "Archlinux"
+
+    - name: Print Apache status Arch Linux
+      debug:
+        msg: "Apache service status is {{ apache_status_arch.stdout }}"
+      when: ansible_distribution == "Archlinux"
+
+  #################################################################
+  # HANDLERS
+  #################################################################
+
+  handlers:
+
+    - name: Restart Apache Debian
+      service:
+        name: "{{ apache_service_debian }}"
+        state: restarted
+
+    - name: Restart Apache Arch
+      service:
+        name: "{{ apache_service_arch }}"
+        state: restarted
