@@ -67,7 +67,7 @@ paste content:
     - name: Print variable message
       shell: echo "{{ message }}"
       
->> 
+>> ansible-playbook -i inventory.ini variable-demo2.yaml
 
 
 
