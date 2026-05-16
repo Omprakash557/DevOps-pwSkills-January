@@ -33,6 +33,9 @@
 | 3rd-May | "• Blue/Green, Canary, Rolling deployments • Automated testing & monitoring • Deployment automation & orchestration • CD best practices & optimization • Release management & approvals" | [Link](https://miro.com/app/board/uXjVHZdx1DQ=/?share_link_id=916816987536) |
 | 9th-May | "• Why config management is essential (manual vs. automated) • Key benefits (consistency, scalability, disaster recovery) • Popular tools overview (Chef, Puppet, Ansible) and why Ansible is often preferred" | [Link](https://miro.com/app/board/uXjVHVnvK14=/?share_link_id=877351479856) |
 | 10th-May | ""• Agentless architecture, simple YAML syntax, push-based model • Declarative vs. imperative models • Installation steps on various OS • Control node, managed nodes, inventory, modules, tasks, playbooks • Communication via SSH, Ansible command structure, ad-hoc commands"" | [Link](https://miro.com/app/board/uXjVHV3wlRw=/?share_link_id=786983565268) |
+| 16th-May | ""Ansible CORE • Overview of static vs. dynamic inventories • Writing & managing static inventory files (hosts file) • Using dynamic inventories with AWS, GCP, Azure Ansible Modules • Variables, facts, conditionals, loops Handlers and Notifications• Creating handlers to restart services or trigger actions • Notifications after tasks"" | [Link](https://miro.com/app/board/uXjVHS5cueg=/?share_link_id=110177744324) |
+
+
 
 
 
