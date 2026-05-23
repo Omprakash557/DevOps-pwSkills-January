@@ -35,7 +35,7 @@
 | 10th-May | ""• Agentless architecture, simple YAML syntax, push-based model • Declarative vs. imperative models • Installation steps on various OS • Control node, managed nodes, inventory, modules, tasks, playbooks • Communication via SSH, Ansible command structure, ad-hoc commands"" | [Link](https://miro.com/app/board/uXjVHV3wlRw=/?share_link_id=786983565268) |
 | 16th-May | ""Ansible CORE • Overview of static vs. dynamic inventories • Writing & managing static inventory files (hosts file) • Using dynamic inventories with AWS, GCP, Azure Ansible Modules • Variables, facts, conditionals, loops Handlers and Notifications• Creating handlers to restart services or trigger actions • Notifications after tasks"" | [Link](https://miro.com/app/board/uXjVHS5cueg=/?share_link_id=110177744324) |
 | 17th-May | "Advanced Ansible Automation" Ansible  •Roles Galaxy , Reusability playbooks, Templates"" | [Link](https://miro.com/app/board/uXjVHSNx_Fw=/?share_link_id=670912723614) |
-| 23rd-May | ""Advanced Ansible Usage • Parallelism and Ansible Performance • Ansible and Cloud Provisioning • Monitoring with Ansible • Orchestrating Deployments & CI/CD" | [Link (https://miro.com/app/board/uXjVHPQAfO8=/?share_link_id=855587978897) |
+| 23rd-May | ""Advanced Ansible Usage • Parallelism and Ansible Performance • Ansible and Cloud Provisioning • Monitoring with Ansible • Orchestrating Deployments & CI/CD" | [Link](https://miro.com/app/board/uXjVHPQAfO8=/?share_link_id=855587978897) |
 
 
 
