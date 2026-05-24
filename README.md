@@ -36,7 +36,7 @@
 | 16th-May | ""Ansible CORE • Overview of static vs. dynamic inventories • Writing & managing static inventory files (hosts file) • Using dynamic inventories with AWS, GCP, Azure Ansible Modules • Variables, facts, conditionals, loops Handlers and Notifications• Creating handlers to restart services or trigger actions • Notifications after tasks"" | [Link](https://miro.com/app/board/uXjVHS5cueg=/?share_link_id=110177744324) |
 | 17th-May | "Advanced Ansible Automation" Ansible  •Roles Galaxy , Reusability playbooks, Templates"" | [Link](https://miro.com/app/board/uXjVHSNx_Fw=/?share_link_id=670912723614) |
 | 23rd-May | ""Advanced Ansible Usage • Parallelism and Ansible Performance • Ansible and Cloud Provisioning • Monitoring with Ansible • Orchestrating Deployments & CI/CD" | [Link](https://miro.com/app/board/uXjVHPQAfO8=/?share_link_id=855587978897) |
-
+| 24th-May | ""Docker fundamentals" | [Link](https://miro.com/app/board/uXjVHOgFpv4=/?share_link_id=535514043271) |
 
 
 
