@@ -37,7 +37,6 @@
 | 17th-May | "Advanced Ansible Automation" Ansible  •Roles Galaxy , Reusability playbooks, Templates"" | [Link](https://miro.com/app/board/uXjVHSNx_Fw=/?share_link_id=670912723614) |
 | 23rd-May | ""Advanced Ansible Usage • Parallelism and Ansible Performance • Ansible and Cloud Provisioning • Monitoring with Ansible • Orchestrating Deployments & CI/CD" | [Link](https://miro.com/app/board/uXjVHPQAfO8=/?share_link_id=855587978897) |
 | 24th-May | ""Docker fundamentals" | [Link](https://miro.com/app/board/uXjVHOgFpv4=/?share_link_id=535514043271) |
-
-
+| 30th-May | "Docker Compose Essentials" | [Link](https://miro.com/app/board/uXjVHMZyrCU=/?share_link_id=656006053617) |
 
 
