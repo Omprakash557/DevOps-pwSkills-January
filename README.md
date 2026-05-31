@@ -38,5 +38,6 @@
 | 23rd-May | ""Advanced Ansible Usage • Parallelism and Ansible Performance • Ansible and Cloud Provisioning • Monitoring with Ansible • Orchestrating Deployments & CI/CD" | [Link](https://miro.com/app/board/uXjVHPQAfO8=/?share_link_id=855587978897) |
 | 24th-May | ""Docker fundamentals" | [Link](https://miro.com/app/board/uXjVHOgFpv4=/?share_link_id=535514043271) |
 | 30th-May | "Docker Compose Essentials" | [Link](https://miro.com/app/board/uXjVHMZyrCU=/?share_link_id=656006053617) |
+| 31th-May | "AWS Security and Compute Essentials" | [Link](https://miro.com/app/board/uXjVHLn3zKg=/?share_link_id=359392675763) |
 
 
