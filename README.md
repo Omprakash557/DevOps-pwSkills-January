@@ -39,5 +39,5 @@
 | 24th-May | ""Docker fundamentals" | [Link](https://miro.com/app/board/uXjVHOgFpv4=/?share_link_id=535514043271) |
 | 30th-May | "Docker Compose Essentials" | [Link](https://miro.com/app/board/uXjVHMZyrCU=/?share_link_id=656006053617) |
 | 31st-May | "K8s - fundamentals" | [Link](https://miro.com/app/board/uXjVHLv1yM8=/?share_link_id=24759300300) |
-
+| 6th-June | "Kubernetes Objects, Networking, and Storage Essentials" | [Link](https://miro.com/app/board/uXjVHJe_Z_U=/?share_link_id=896501061618) | 
 
