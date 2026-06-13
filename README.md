@@ -41,4 +41,5 @@
 | 31st-May | "K8s - fundamentals" | [Link](https://miro.com/app/board/uXjVHLv1yM8=/?share_link_id=24759300300) |
 | 6th-June | "Kubernetes Objects, Networking, and Storage Essentials" | [Link](https://miro.com/app/board/uXjVHJe_Z_U=/?share_link_id=896501061618) | 
 | 7th-June | "Kubernetes Controllers, Scheduling, Scaling, and Container Security" | [Link](https://miro.com/app/board/uXjVHItlNJI=/?share_link_id=789565181465) | 
+| 13th-June | "Kubernetes Cluster Scaling and Infrastructure as Code Foundations" | [Link](https://miro.com/app/board/uXjVHGQacBM=/?share_link_id=655254228590) | 
 
